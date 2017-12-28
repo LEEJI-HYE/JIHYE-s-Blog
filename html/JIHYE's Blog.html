@@ -3,6 +3,8 @@
 <head>
 	<title>JIHYE's BLOG LAYOUT</title>
 	<link rel="stylesheet" type="text/css" href="../css/Blogmain.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
 </head>
 <body>
 
@@ -16,11 +18,12 @@
            		<div class="sideMenuBar">
 
     	     		<div class="menuBar1"><img class="sideMenuEff1">SIDE MENU1</div>
-    	    		<div class="menuBar2"><img class="sideMenuEff2">SIDE MENU2</div>
-    	    		<div class="menuBar3"><img class="sideMenuEff3">SIDE MENU3</div>
+    	    		<div class="menuBar1"><img class="sideMenuEff2">SIDE MENU2</div>
+    	    		<div class="menuBar1"><img class="sideMenuEff3">SIDE MENU3</div>
                 </div>
 
-            </div>    
+            </div>        
+   
 
 	        <div class="mainContent">
 	        	<h2>mainContentPlace</h2>
@@ -28,17 +31,25 @@
 
 	        <div class="subMenuBar">
 	        	<div class="recentContent">
-	        		<div class="recentContentTitle">최근 본 목록</div>
-	        		
+	        		<div class="recentContentTitle">RECENT</div>
+	        		 <div class="recentListtt"> 	
+	        		  <div class="recentList"><a href="">[category]글 내용 길면 이딴식으로 나타내져도 괜찮은 건가요!???? 제대로 나와야 좋은데 제대로!!</a></div>
+	        		  <div class="recentList"><a href="">[category] 글 제목</a></div>
+	        		  <div class="recentList"><a href="">[category] 글 제목</a></div>
+	        		  <div class="recentList"><a href="">[category] 글 제목</a></div>
+	        		  <div class="recentList"><a href="">[category] 글 제목</a></div>
+	        		</div>
 	        	</div>	
 
-	        	<div class="about">
+	        		<div class="about">
+	        			<div class="aboutOfResume">ABOUT</div><br/>(RESUME)<br/>
+	        		</div>
 
-	        	</div>
-
-	        	<div class="snsIcons">
-	        	
-	        	</div>
+	        		<div class="snsIcons"><br/>SNS<br/><br/>
+	        				<i id="FaceBookIcon" class="fa fa-facebook-square" style=" font-size: 60px;color: #365ba4;" ></i><br/>
+	        				<i id="InstaGramIcon" class="fa fa-instagram" style="font-size: 60px; 		color: #d52153;"></i><br/>
+	        				<i id="GithubIcon" class="fa fa-github-square" style="font-size: 60px;	color: black;"></i><br/>	
+	        	  	</div>
 
 		    </div>
 
@@ -46,19 +57,17 @@
     </div>
 
     <script>
-    	$(document).ready(function(){
+       $(document).ready(function(){
 
-    		console.log('document standby!');
-    		//마우스 올렸을 때 : console.log 출력
+           console.log('document standby!');
+           //마우스 올렸을 때 : console.log 출력
 
-    		$(".menuBar1").click(function(){
-    			var id = $(this).attr('id')
-    			alert("id:" + id)
-    		});
-    	});
-    	
-    </script>
-
+           $(".menuBar1").click(function(){
+               var id = $(this).attr('id')
+               alert("id:" + id)
+           });
+       });
+    </script>   
 
 </body>
 </html>
