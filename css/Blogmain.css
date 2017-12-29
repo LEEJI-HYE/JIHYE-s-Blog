@@ -41,7 +41,7 @@ body {background-color: var(--main-background-color);}
 
 .wrapper {width: 100%; height: 100%; background-color: var(--main-background-color);}
 .wrapper .wrapper1 {width: 75%; height: 1000px; background-color: var(--main-color); margin: auto;}
-.wrapper .mainSideBar {width: 24%; height: 1000px; background-color: var(--main-color); float: left;}
+.wrapper .mainSideBar {width: 18%; height: 1000px; background-color: var(--main-color); float: left;}
 .wrapper .mainSideBar .logoBox {width: 100%; height: 30%; background-color: var(--main-color);}
 .wrapper .mainSideBar .logo {width: 100%; height: 30%; text-align: center;
 							 background-color: var(--main-color);}
@@ -60,12 +60,12 @@ body {background-color: var(--main-background-color);}
 
 
 
-.wrapper .mainContent {width: 60%; height: 1000px; text-align: left;
+.wrapper .mainContent {width: 64%; height: 1000px; text-align: left;
 					   background-color: var(--main-color); font-size: 60px; float: left;}
-
+.mainContent {color: white;}
 .wrapper .mainContent .section {width: 100%; height: 1000px; text-align: left;font-size: 20px; float: left;}
 
-.wrapper .subMenuBar {width: 16%; height: 1000px; background-color: var(--main-color); float: left;}
+.wrapper .subMenuBar {width: 18%; height: 1000px; background-color: var(--main-color); float: left;}
 .wrapper .subMenuBar .recentContent {width:100%; height: 50%; text-align: center;
 									 background-color: var(--sub-color);}
 .wrapper .subMenuBar .recentContentTitle {width:100%; height:10%; overflow: hidden; 

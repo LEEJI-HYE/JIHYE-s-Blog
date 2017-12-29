@@ -90,7 +90,6 @@
                var id = $(this).attr('id');
                alert("id:" + id);
            });
-
        $("#FaceBookIcon").on("click",function(){
        		alert('move Facebook');
        		location.href="https://www.facebook.com/jihye.lee.54738";
@@ -104,6 +103,11 @@
        $("#GithubIcon").on("click",function(){
        		alert('move Github');
        		location.href="https://github.com/LEEJI-HYE";
+       });
+       $(".sb-Menu li").hover(function(){
+       		$("ul:first",this).show();
+       }, function(){
+       		$("ul:first",this).hide();
        });
     });
 
