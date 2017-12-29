@@ -1,9 +1,96 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>blog Resume page 구현</title>
+
+	<link rel="stylesheet" type="text/css" href="../css/Blogmain.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="../font-awesome/font-awesome.min.css">
+
 </head>
+
 <body>
 
+	<div class="wrapper">
+	   <div class="wrapper1">
+	   		<div class="mainSideBar">
+	   			<div class="logoBox">
+	   	  			<div class="logo">LOGO</div>
+	   	  		</div>	
+
+           		<div class="sideMenuBar">
+
+    	     		<div class="menuBar1" id="sideMenuEff1">SIDE MENU1</div>
+    	    		<div class="menuBar1" id="sideMenuEff2">SIDE MENU2</div>
+    	    		<div class="menuBar1" id="sideMenuEff3">SIDE MENU3</div>
+                </div>
+
+            </div>        
+   
+
+	        <div class="mainContent">
+	        	<h2>JIHYE LEE</h2>
+	        		<div class="section">
+	        			<div class="adress">ADDRESS<p/>102-1201,22,GEOMA-RO,NAM-GU,REPUBLC OF KOREA</div></p>
+	        			<div class="phoneNumber">PHONE</p>+82-10-8602-9240</div></p>
+	        			<div class="eMail">E-mail</p>ONLYJH0924@GMAIL.COM</div>
+	        		</div>
+
+	        </div>
+
+	        <div class="subMenuBar">
+	        	<div class="recentContent">
+	        		<div class="recentContentTitle">RECENT</div>
+	        		 <div class="recentListtt"> 	
+	        		  <div class="recentList"><a href="">[category]글 내용 길면 이딴식으로 나타내져도 괜찮은 건가요!???? 제대로 나와야 좋은데 제대로!!</a></div>
+	        		  <div class="recentList"><a href="">[category] 글 제목</a></div>
+	        		  <div class="recentList"><a href="">[category] 글 제목</a></div>
+	        		  <div class="recentList"><a href="">[category] 글 제목</a></div>
+	        		  <div class="recentList"><a href="">[category] 글 제목</a></div>
+	        		</div>
+	        	</div>	
+
+	        		<div class="about">
+	        			<div class="aboutOfResume">ABOUT</div><br/>(RESUME)<br/>
+	        		</div>
+
+	        		<div class="snsIcons"><br/>SNS<br/><br/>
+	        				<i id="FaceBookIcon" class="fa fa-facebook-square"></i><br/>
+	        				<i id="InstaGramIcon" class="fa fa-instagram"></i><br/>
+	        				<i id="GithubIcon" class="fa fa-github-square"></i><br/>	
+	        	  	</div>
+
+		    </div>
+
+	   </div>
+    </div>
+
+    <script>
+
+       $(document).ready(function(){
+           $(".menuBar1").click(function(){
+               var id = $(this).attr('id');
+               alert("id:" + id);
+           });
+
+       $("#FaceBookIcon").on("click",function(){
+       		alert('move Facebook');
+       		location.href="https://www.facebook.com/jihye.lee.54738";
+       });
+
+       $("#InstaGramIcon").on("click",function(){
+       		alert('move Instagram');
+       		location.href="https://www.instagram.com/wisdom__is/";
+       });
+
+       $("#GithubIcon").on("click",function(){
+       		alert('move Github');
+       		location.href="https://github.com/LEEJI-HYE";
+       });
+    });
+
+    </script>
+
 </body>
+
 </html>

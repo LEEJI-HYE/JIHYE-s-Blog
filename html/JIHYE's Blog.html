@@ -2,8 +2,11 @@
 <html>
 <head>
 	<title>JIHYE's BLOG LAYOUT</title>
+
 	<link rel="stylesheet" type="text/css" href="../css/Blogmain.css">
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="../font-awesome/font-awesome.min.css">
+	<link rel="stylesheet" type="text/html" href="../html/blogResume.html">
 
 </head>
 <body>
@@ -17,16 +20,40 @@
 
            		<div class="sideMenuBar">
 
-    	     		<div class="menuBar1"><img class="sideMenuEff1">SIDE MENU1</div>
-    	    		<div class="menuBar1"><img class="sideMenuEff2">SIDE MENU2</div>
-    	    		<div class="menuBar1"><img class="sideMenuEff3">SIDE MENU3</div>
+           			<ul class="sb-Menu">
+
+           				<li><a href="#">SIDE MENU1</a>
+   							<ul>
+   								<li><a href="#">SIDE MENU1-1</a></li>
+   								<li><a href="#">SIDE MENU1-2</a></li>
+   							</ul>
+           				</li>
+           				<li><a href="#">SIDE MENU2</a>
+   					 		<ul>
+   								<li><a href="#">SIDE MENU2-1</a></li>
+   								<li><a href="#">SIDE MENU2-2</a></li>
+					 		</ul>
+				 	 	</li>
+				 	 	<li><a href="#">SIDE MENU3</a>
+				 	 		<ul>
+				 	 			<li><a href="#">SIDE MENU3-1</a></li>
+				 	 			<li><a href="#">SIDE MENU3-2</a></li>
+				 	 		</ul>
+				 	 
+				 	 	</li>
+
+		 	 		</ul>
+
+    	     		<!-- <div class="menuBar1" id="sideMenuEff1">SIDE MENU1</div>
+    	    		<div class="menuBar1" id="sideMenuEff2">SIDE MENU2</div>
+    	    		<div class="menuBar1" id="sideMenuEff3">SIDE MENU3</div> -->
                 </div>
 
             </div>        
    
 
 	        <div class="mainContent">
-	        	<h2>mainContentPlace</h2>
+	        	<h2>JIHYE LEE</h2>
 	        </div>
 
 	        <div class="subMenuBar">
@@ -46,9 +73,9 @@
 	        		</div>
 
 	        		<div class="snsIcons"><br/>SNS<br/><br/>
-	        				<i id="FaceBookIcon" class="fa fa-facebook-square" style=" font-size: 60px;color: #365ba4;" ></i><br/>
-	        				<i id="InstaGramIcon" class="fa fa-instagram" style="font-size: 60px; 		color: #d52153;"></i><br/>
-	        				<i id="GithubIcon" class="fa fa-github-square" style="font-size: 60px;	color: black;"></i><br/>	
+	        				<i id="FaceBookIcon" class="fa fa-facebook-square"></i><br/>
+	        				<i id="InstaGramIcon" class="fa fa-instagram"></i><br/>
+	        				<i id="GithubIcon" class="fa fa-github-square"></i><br/>	
 	        	  	</div>
 
 		    </div>
@@ -57,17 +84,30 @@
     </div>
 
     <script>
+
        $(document).ready(function(){
-
-           console.log('document standby!');
-           //마우스 올렸을 때 : console.log 출력
-
            $(".menuBar1").click(function(){
-               var id = $(this).attr('id')
-               alert("id:" + id)
+               var id = $(this).attr('id');
+               alert("id:" + id);
            });
+
+       $("#FaceBookIcon").on("click",function(){
+       		alert('move Facebook');
+       		location.href="https://www.facebook.com/jihye.lee.54738";
        });
-    </script>   
+
+       $("#InstaGramIcon").on("click",function(){
+       		alert('move Instagram');
+       		location.href="https://www.instagram.com/wisdom__is/";
+       });
+
+       $("#GithubIcon").on("click",function(){
+       		alert('move Github');
+       		location.href="https://github.com/LEEJI-HYE";
+       });
+    });
+
+    </script>
 
 </body>
 </html>
