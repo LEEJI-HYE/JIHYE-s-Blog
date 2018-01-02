@@ -20,22 +20,54 @@
 
            		<div class="sideMenuBar">
 
-    	     		<div class="menuBar1" id="sideMenuEff1">SIDE MENU1</div>
+           			<ul class="sb-Menu">
+
+           				<li><a href="#">SIDE MENU1</a>
+   							<ul>
+   								<li><a href="#">SIDE MENU1-1</a></li>
+   								<li><a href="#">SIDE MENU1-2</a></li>
+   							</ul>
+           				</li>
+           				<li><a href="#">SIDE MENU2</a>
+   					 		<ul>
+   								<li><a href="#">SIDE MENU2-1</a></li>
+   								<li><a href="#">SIDE MENU2-2</a></li>
+					 		</ul>
+				 	 	</li>
+				 	 	<li><a href="#">SIDE MENU3</a>
+				 	 		<ul>
+				 	 			<li><a href="#">SIDE MENU3-1</a></li>
+				 	 			<li><a href="#">SIDE MENU3-2</a></li>
+				 	 		</ul>
+				 	 
+				 	 	</li>
+
+		 	 		</ul>
+
+    	     		<!-- <div class="menuBar1" id="sideMenuEff1">SIDE MENU1</div>
     	    		<div class="menuBar1" id="sideMenuEff2">SIDE MENU2</div>
-    	    		<div class="menuBar1" id="sideMenuEff3">SIDE MENU3</div>
+    	    		<div class="menuBar1" id="sideMenuEff3">SIDE MENU3</div> -->
                 </div>
 
             </div>        
    
 
 	        <div class="mainContent">
-	        	<h2>JIHYE LEE</h2>
+	        	<h2 class="emPhName">JIHYE <span class="noemPhName">LEE</span></h2>
 	        		<div class="section">
-	        			<div class="adress">ADDRESS<p/>102-1201,22,GEOMA-RO,NAM-GU,REPUBLC OF KOREA</div></p>
-	        			<div class="phoneNumber">PHONE</p>+82-10-8602-9240</div></p>
-	        			<div class="eMail">E-mail</p>ONLYJH0924@GMAIL.COM</div>
-	        		</div>
-
+	        			<div class="adress">&deg;ADDRESS<p/>102-1201,22,GEOMA-RO,NAM-GU,REPUBLC OF KOREA</div></br>
+	        			<div class="phoneNumber">&deg;PHONE</p>+82-10-8602-9240</div></br>
+	        			<div class="eMail">&deg;E-mail</p>ONLYJH0924@GMAIL.COM</div></br>
+	        			<div class="EXPERIENCE">
+	        				<ul class="experience">&deg;EXPERIENCE</p/>
+	        					<li>EXCHANGE STUDENT: Februry 2016-July 2016</li>
+	        					<li>STUDENT COUNCIL ACTIVITY: January 2014-December 2014</li>
+	        					<li>CAFE BARISTA: July 2014-August 2015</li>
+	        					<li>BUFFET PART-TIME JOB: December 2011-Februry 2012</li>
+	        				</ul>
+	        			</div>	</br>
+        				<div class="eDucation">&deg;EUDUCATION</p>UNIVERSITY OF DAEGU-DEPARTMENT OF FRENCH LANGUAGE AND LITERATURE(March 2012-Februry2018)</p>WOO-SHIN HIGH SCHOOL-HUMANITIES PROGRAM(March 2009-Februry2012)</div>
+	        		    </div>
 	        </div>
 
 	        <div class="subMenuBar">
@@ -51,8 +83,8 @@
 	        	</div>	
 
 	        		<div class="about">
-	        			<div class="aboutOfResume">ABOUT</div><br/>(RESUME)<br/>
-	        		</div>
+	        			<div id="RESUMEPAGEGO">ABOUT<br/>RESUME</div>
+	        		</div>	
 
 	        		<div class="snsIcons"><br/>SNS<br/><br/>
 	        				<i id="FaceBookIcon" class="fa fa-facebook-square"></i><br/>
@@ -72,7 +104,6 @@
                var id = $(this).attr('id');
                alert("id:" + id);
            });
-
        $("#FaceBookIcon").on("click",function(){
        		alert('move Facebook');
        		location.href="https://www.facebook.com/jihye.lee.54738";
@@ -86,6 +117,11 @@
        $("#GithubIcon").on("click",function(){
        		alert('move Github');
        		location.href="https://github.com/LEEJI-HYE";
+       });
+       $(".sb-Menu li").hover(function(){
+       		$("ul:first",this).show();
+       }, function(){
+       		$("ul:first",this).hide();
        });
     });
 

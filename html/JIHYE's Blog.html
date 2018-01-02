@@ -53,7 +53,7 @@
    
 
 	        <div class="mainContent">
-	        	<h2>JIHYE LEE</h2>
+	        	<h2>mainContent</h2>
 	        </div>
 
 	        <div class="subMenuBar">
@@ -69,7 +69,8 @@
 	        	</div>	
 
 	        		<div class="about">
-	        			<div class="aboutOfResume">ABOUT</div><br/>(RESUME)<br/>
+	        			<div id="RESUMEPAGEGO">ABOUT<br/>RESUME</div>
+	        				
 	        		</div>
 
 	        		<div class="snsIcons"><br/>SNS<br/><br/>
@@ -90,7 +91,7 @@
                var id = $(this).attr('id');
                alert("id:" + id);
            });
-       $("#FaceBookIcon").on("click",function(){
+       $("#FaceBookIcon").on("clihttp://heeestorys.tistory.com/747ck",function(){
        		alert('move Facebook');
        		location.href="https://www.facebook.com/jihye.lee.54738";
        });
@@ -108,6 +109,11 @@
        		$("ul:first",this).show();
        }, function(){
        		$("ul:first",this).hide();
+       });
+       $(function(){
+       		$('#RESUMEPAGEGO').click(function(){
+       			location.href = 'blogResume.html';
+       		});
        });
     });
 

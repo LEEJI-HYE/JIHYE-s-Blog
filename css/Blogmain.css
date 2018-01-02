@@ -58,11 +58,11 @@ body {background-color: var(--main-background-color);}
 .sb-Menu ul li:hover {float: none;}
 .sb-Menu li li:hover a {color: black;}
 
-
-
 .wrapper .mainContent {width: 64%; height: 1000px; text-align: left;
 					   background-color: var(--main-color); font-size: 60px; float: left;}
 .mainContent {color: white;}
+.emPhName {color: white; text-decoration: underline;}
+.noemPhName {color: #808080;}
 .wrapper .mainContent .section {width: 100%; height: 1000px; text-align: left;font-size: 20px; float: left;}
 
 .wrapper .subMenuBar {width: 18%; height: 1000px; background-color: var(--main-color); float: left;}
