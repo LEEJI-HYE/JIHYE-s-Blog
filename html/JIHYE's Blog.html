@@ -16,7 +16,7 @@
 	   <div class="wrapper1">
 	   		<div class="mainSideBar">
 	   			<div class="logoBox">
-	   	  			<div class="logo">LOGO</div>
+	   	  			<div class="logo"><img id="logoSize" src="../img/logo.png"></div>
 	   	  		</div>	
 
            		<div class="sideMenuBar">
@@ -53,8 +53,38 @@
             </div>        
    
 
-	        <div class="mainContent">
-	        	<h2>mainContent</h2>
+	       <div class="mainContent">CONTENT BOX</br>
+	        	<div class="contents">
+
+		        		<div class="readBox1"><a href="#">
+	        				<img id="imgSize" src="../img/peach.jpg">Peach</a>
+		        		</div>
+		        		<div class="readBox2"><a href="#">
+		        			<img id="imgSize" src="../img/flamingo.jpg">Flamingo</a>
+		        		</div>
+		        		<div class="readBox3"><a href="#">
+		        			<img id="imgSize" src="../img/pinklake.jpg">Pink Lake</a>
+		        		</div>
+		        		<div class="readBox4"><a href="#">
+		        			<img id="imgSize" src="../img/cherryblossom.jpg">Cherry Blossom</a>
+		        		</div>
+		        		<div class="readBox5"><a href="#">
+		        			<img id="imgSize" src="../img/apeachh.jpg">APeachh</a>
+		        		</div>
+		        		<div class="readBox6"><a href="#">
+		        			<img id="imgSize" src="../img/pinkMuhlyGrass.jpg">Pink Muhly Grass</a>
+		        		</div>
+		        		<div class="readBox7"><a href="#">
+		        			<img id="imgSize" src="../img/pinkPanda.jpg">Pink Panda</a>
+		        		</div>
+		        		<div class="readBox8"><a href="#">
+		        			<img id="imgSize" src="../img/grandBudaPestHotel.jpg">Grand BudaPest Hotel</a>
+		        		</div>
+		        		<div class="readBox9"><a href="#">
+		        			<img id="imgSize" src="../img/simpsonDonuts.png">Simpson Donut</a>
+		        		</div>
+
+	        	</div>
 
 	        </div>
 
@@ -92,7 +122,8 @@
                var id = $(this).attr('id');
                alert("id:" + id);
            });
-       $("#FaceBookIcon").on("clihttp://heeestorys.tistory.com/747ck",function(){
+
+       $("#FaceBookIcon").on("click",function(){
        		alert('move Facebook');
        		location.href="https://www.facebook.com/jihye.lee.54738";
        });
@@ -111,10 +142,13 @@
        }, function(){
        		$("ul:first",this).hide();
        });
-       $(function(){
-       		$('#RESUMEPAGEGO').click(function(){
-       			location.href = 'blogResume.html';
-       		});
+
+       $("#RESUMEPAGEGO").click(function(){
+   			location.href = "blogResume.html";
+       });
+
+       $(".readBox1").click(function(){
+       		location.href = "blogRead.html";
        });
     });
 

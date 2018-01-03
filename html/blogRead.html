@@ -15,7 +15,7 @@
 	   <div class="wrapper1">
 	   		<div class="mainSideBar">
 	   			<div class="logoBox">
-	   	  			<div class="logo">LOGO</div>
+	   	  			<div class="logo"><img id="logoSize" src="../img/logo.png"></div>
 	   	  		</div>	
 
            		<div class="sideMenuBar">
@@ -52,86 +52,16 @@
             </div>        
    
 
-	        <div class="mainContent">MAIN</br>
-	        	<div class="contents">
-	        		<div class="readList">
-	        			<ul class="LDlist">
-	        				<li class="list1">
-	        					<div class="listBox1">
-	        						<p class="img1">
-	        							<a href="#"><img src="../img/peach.jpg"></a>
-	        						</p>
-	        						<p class="name1">Peach</p>
-	        					</div>
-	        				</li>
-	        				<li class="list2">
-	        					<div class="listBox2">
-	        						<p class="img2">
-	        							<a href="#"><img src="../img/apeachh.jpg"></a>
-	        						</p>
-	        						<p class="name2">APeach</p>
-	        					</div>
-	        				</li>
-	        				<li class="list3">
-	        					<div class="listBox3">
-	        						<p class="img3">
-	        							<a href="#"><img src="../img/cherryblossom.jpg"></a>
-	        						</p>
-	        						<p class="name3">CherryBlossom</p>
-	        					</div>
-	        				</li>
-	        				<li class="list4">
-	        					<div class="listBox4">
-	        						<p class="img4">
-	        							<a href="#"><img src="../img/flamingo.jpg"></a>
-	        						</p>
-	        						<p class="name4">Flamingo</p>
-	        					</div>
-	        				</li>
-	        				<li class="list5">
-	        					<div class="listBox5">
-	        						<p class="img5">
-	        							<a href="#"><img src="../img/grandBudaPestHotel.jpg"></a>
-	        						</p>
-	        						<p class="name5">GrandBudaPestHotel</p>
-	        					</div>
-	        				</li>
-	        				<li class="list6">
-	        					<div class="listBox6">
-	        						<p class="img6">
-	        							<a href="#>"><img src="../img/pinklake.jpg"></a></p>
-	        						<p class="name6">PinkLake</p>
-	        					</div>
-	        				</li>
-	        				<li class="list7">
-	        					<div class="listBox7">
-	        						<p class="img7">
-	        							<a href="#"><img src="../img/pinkMuhlyGrass.jpg"></a></p>
-	        						<p class="name7">PinkMuhlyGrass</p>	
-	        					</div>
-	        				</li>
-	        				<li class="list8">
-	        					<div class="listBox8">
-	        						<p class="img8">
-	        							<a href="#"><img src="../img/pinkPanda.jpg"></a>
-	        						</p>
-	        						<p class="name8">PinkPanda</p>
-	        					</div>
-	        				</li>
-	        				<li class="list9">
-	        					<div class="listBox9">
-	        						<p class="img9">
-	        							<a href="#"><img src="../img/simpsonDonuts.png"></a>
-	        						</p>
-	        						<p class="name9">SimpsinDonut</p>
-	        					</div>
-	        				</li>
-	        			</ul>
-	        		</div>
-
-	        		
+	        <div class="mainContent"></br>
+	        	<div class="content1">
+	        		<div class="substanceTitle">&deg;PEACH</div>
+	        			<div class="substance">복숭아는 장미과 벚나무속에 속하는 복사나무의 열매이다. 원산지는 중국이다. 복사나무는 복숭아나무라고도 부르며, 갈잎 작은키나무다. 대한민국에서 사과나무, 귤나무, 포도나무에 이어 많이 기르는 과일나무다. 동양 미술에서 복숭하는 이상의 세계에서 자라는 나무의 과일로 묘사된다.</div>
+	        			<p>&nbsp;</p>
+	        			<div class="substance">내가 제일 좋아하는 과일이다.</div>
+	        			<p>&nbsp;</p>
+	        			<div class="substance">교환학생 갔을 때 먹었던 유럽에서만 생산되는 납작 복숭아는 진심 핵 맛있다. 또 먹고싶다.</div>
 	        	</div>
-	        	<table></table>
+	        	
 
 	        </div>
 
@@ -169,6 +99,7 @@
                var id = $(this).attr('id');
                alert("id:" + id);
            });
+
        $("#FaceBookIcon").on("clihttp://heeestorys.tistory.com/747ck",function(){
        		alert('move Facebook');
        		location.href="https://www.facebook.com/jihye.lee.54738";
@@ -183,15 +114,15 @@
        		alert('move Github');
        		location.href="https://github.com/LEEJI-HYE";
        });
+
        $(".sb-Menu li").hover(function(){
        		$("ul:first",this).show();
        }, function(){
        		$("ul:first",this).hide();
        });
-       $(function(){
-       		$('#RESUMEPAGEGO').click(function(){
-       			location.href = 'blogResume.html';
-       		});
+
+		$('#RESUMEPAGEGO').click(function(){
+   			location.href = 'blogResume.html';
        });
     });
 
