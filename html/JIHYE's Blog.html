@@ -16,7 +16,7 @@
 	   <div class="wrapper1">
 	   		<div class="mainSideBar">
 	   			<div class="logoBox">
-	   	  			<div class="logo"><img id="logoSize" src="../img/logo.png"></div>
+	   	  			<div class="logo"><img id="logoSize" src="../img/logoMake.png"></div>
 	   	  		</div>	
 
            		<div class="sideMenuBar">
@@ -49,6 +49,14 @@
     	    		<div class="menuBar1" id="sideMenuEff2">SIDE MENU2</div>
     	    		<div class="menuBar1" id="sideMenuEff3">SIDE MENU3</div> -->
                 </div>
+
+            	<br/>
+            	<br/>
+            	<br/>
+            	<br/>
+            	<br/>
+
+                <button class="btn_6">writing</button>
 
             </div>        
    
@@ -124,18 +132,21 @@
            });
 
        $("#FaceBookIcon").on("click",function(){
-       		alert('move Facebook');
-       		location.href="https://www.facebook.com/jihye.lee.54738";
+   			var openNewWindow = window.open('about:blank');
+       		//alert('move Facebook');
+       		openNewWindow.location.href="https://www.facebook.com/jihye.lee.54738";
        });
 
        $("#InstaGramIcon").on("click",function(){
-       		alert('move Instagram');
-       		location.href="https://www.instagram.com/wisdom__is/";
+   			var openNewWindow = window.open('about:blank');
+       		//alert('move Instagram');
+       		openNewWindow.location.href="https://www.instagram.com/wisdom__is/";
        });
 
        $("#GithubIcon").on("click",function(){
-       		alert('move Github');
-       		location.href="https://github.com/LEEJI-HYE";
+       		var openNewWindow = window.open('about:blank');
+       		//alert('move Github');
+       		openNewWindow.location.href="https://github.com/LEEJI-HYE";
        });
        $(".sb-Menu li").hover(function(){
        		$("ul:first",this).show();
