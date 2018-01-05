@@ -7,6 +7,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="../font-awesome/font-awesome.min.css">
 	<link rel="stylesheet" type="text/html" href="../html/blogResume.html">
+	<script src="../js/blog.js"></script>
 
 </head>
 <body>
@@ -22,7 +23,7 @@
 
            			<ul class="sb-Menu">
 
-           				<li><a href="#">SIDE MENU1</a>
+           				<!--<li><a href="#">SIDE MENU1</a>
    							<ul>
    								<li><a href="#">SIDE MENU1-1</a></li>
    								<li><a href="#">SIDE MENU1-2</a></li>
@@ -38,7 +39,7 @@
 				 	 		<ul>
 				 	 			<li><a href="#">SIDE MENU3-1</a></li>
 				 	 			<li><a href="#">SIDE MENU3-2</a></li>
-				 	 		</ul>
+				 	 		</ul>!-->
 				 	 
 				 	 	</li>
 
@@ -54,12 +55,25 @@
 
 	        <div class="mainContent"></br>
 	        	<div class="content1">
-	        		<div class="substanceTitle">&deg;PEACH</div>
-	        			<div class="substance">복숭아는 장미과 벚나무속에 속하는 복사나무의 열매이다. 원산지는 중국이다. 복사나무는 복숭아나무라고도 부르며, 갈잎 작은키나무다. 대한민국에서 사과나무, 귤나무, 포도나무에 이어 많이 기르는 과일나무다. 동양 미술에서 복숭하는 이상의 세계에서 자라는 나무의 과일로 묘사된다.</div>
-	        			<p>&nbsp;</p>
-	        			<div class="substance">내가 제일 좋아하는 과일이다.</div>
-	        			<p>&nbsp;</p>
-	        			<div class="substance">교환학생 갔을 때 먹었던 유럽에서만 생산되는 납작 복숭아는 진심 핵 맛있다. 또 먹고싶다.</div>
+	        		<div class="inputImg">
+	        			<img id="preview" src="" width="700" alt="로컬에 있는 이미지 보여지는 영역">
+	        			<input id="getfile" accept="img/*" type="file">
+	        		</div>
+	        		<div class="inputTitle">
+	        			<input class="wirteTitle" type="text" value="제목을 입력하세요" maxlength="70">
+	        		</div><br/>
+	        		<div class="inputKategorie">
+	        			<select class="Kategories">
+	        				<!--<option>HTML</option>
+	        					<option>CSS</option>
+                            	<option>JS</option>
+                           		<option>JAVA</option> -->
+	        			</select>
+	        		</div>
+	        		<div class="inputText">
+	        			<textarea class="writeText" maxlength="1000">내용</textarea>
+	        		</div>
+
 	        	</div>
 	        	
 
@@ -93,39 +107,18 @@
     </div>
 
     <script>
+    	 var file = document.querySelector('#getfile');
 
-       $(document).ready(function(){
-           $(".menuBar1").click(function(){
-               var id = $(this).attr('id');
-               alert("id:" + id);
-           });
+        file.onchange = function() {
+            var fileList = file.files;
 
-       $("#FaceBookIcon").on("clihttp://heeestorys.tistory.com/747ck",function(){
-       		alert('move Facebook');
-       		location.href="https://www.facebook.com/jihye.lee.54738";
-       });
+            var reader = new FileReader();
+            reader.readAsDataURL(fileList[0]);
 
-       $("#InstaGramIcon").on("click",function(){
-       		alert('move Instagram');
-       		location.href="https://www.instagram.com/wisdom__is/";
-       });
-
-       $("#GithubIcon").on("click",function(){
-       		alert('move Github');
-       		location.href="https://github.com/LEEJI-HYE";
-       });
-
-       $(".sb-Menu li").hover(function(){
-       		$("ul:first",this).show();
-       }, function(){
-       		$("ul:first",this).hide();
-       });
-
-		$('#RESUMEPAGEGO').click(function(){
-   			location.href = 'blogResume.html';
-       });
-    });
-
+            reader.onload = function() {
+            document.querySelector('#preview').src = reader.result;
+            }; 
+        };
     </script>
 
 </body>

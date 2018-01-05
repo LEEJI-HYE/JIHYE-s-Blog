@@ -6,6 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="../css/Blogmain.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="../font-awesome/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../html/blogRead.html">
+	<script src="../js/blog.js"></script>
 
 </head>
 
@@ -22,7 +24,7 @@
 
            			<ul class="sb-Menu">
 
-           				<li><a href="#">SIDE MENU1</a>
+           				<!--<li><a href="#">SIDE MENU1</a>
    							<ul>
    								<li><a href="#">SIDE MENU1-1</a></li>
    								<li><a href="#">SIDE MENU1-2</a></li>
@@ -38,7 +40,7 @@
 				 	 		<ul>
 				 	 			<li><a href="#">SIDE MENU3-1</a></li>
 				 	 			<li><a href="#">SIDE MENU3-2</a></li>
-				 	 		</ul>
+				 	 		</ul>!-->
 				 	 
 				 	 	</li>
 
@@ -96,36 +98,6 @@
 
 	   </div>
     </div>
-
-    <script>
-
-       $(document).ready(function(){
-           $(".menuBar1").click(function(){
-               var id = $(this).attr('id');
-               alert("id:" + id);
-           });
-       $("#FaceBookIcon").on("click",function(){
-       		alert('move Facebook');
-       		location.href="https://www.facebook.com/jihye.lee.54738";
-       });
-
-       $("#InstaGramIcon").on("click",function(){
-       		alert('move Instagram');
-       		location.href="https://www.instagram.com/wisdom__is/";
-       });
-
-       $("#GithubIcon").on("click",function(){
-       		alert('move Github');
-       		location.href="https://github.com/LEEJI-HYE";
-       });
-       $(".sb-Menu li").hover(function(){
-       		$("ul:first",this).show();
-       }, function(){
-       		$("ul:first",this).hide();
-       });
-    });
-
-    </script>
 
 </body>
 

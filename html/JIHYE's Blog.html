@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="../font-awesome/font-awesome.min.css">
 	<link rel="stylesheet" type="text/html" href="../html/blogResume.html">
 	<link rel="stylesheet" type="text/css" href="../html/blogRead.html">
+	<script src="../js/blog.js"></script>
 
 </head>
 <body>
@@ -23,9 +24,9 @@
 
            			<ul class="sb-Menu">
 
-           				<li><a href="#">SIDE MENU1</a>
+           				<!--<li><a href="#">SIDE MENU1</a>
    							<ul>
-   								<li><a href="#">SIDE MENU1-1</a></li>
+   								<li><a href="#">}SIDE MENU1-1</a></li>
    								<li><a href="#">SIDE MENU1-2</a></li>
    							</ul>
            				</li>
@@ -41,7 +42,7 @@
 				 	 			<li><a href="#">SIDE MENU3-2</a></li>
 				 	 		</ul>
 				 	 
-				 	 	</li>
+				 	 	</li>!-->
 
 		 	 		</ul>
 
@@ -56,7 +57,7 @@
             	<br/>
             	<br/>
 
-                <button class="btn_6">writing</button>
+                <button class="side_btn">writing</button>
 
             </div>        
    
@@ -65,31 +66,31 @@
 	        	<div class="contents">
 
 		        		<div class="readBox1"><a href="#">
-	        				<img id="imgSize" src="../img/peach.jpg">Peach</a>
+	        				<img id="imgSize" src="../img/peach.jpg">Daily</a>
 		        		</div>
 		        		<div class="readBox2"><a href="#">
-		        			<img id="imgSize" src="../img/flamingo.jpg">Flamingo</a>
+		        			<img id="imgSize" src="../img/flamingo.jpg">Beauty</a>
 		        		</div>
 		        		<div class="readBox3"><a href="#">
-		        			<img id="imgSize" src="../img/pinklake.jpg">Pink Lake</a>
+		        			<img id="imgSize" src="../img/pinklake.jpg">Travel</a>
 		        		</div>
 		        		<div class="readBox4"><a href="#">
-		        			<img id="imgSize" src="../img/cherryblossom.jpg">Cherry Blossom</a>
+		        			<img id="imgSize" src="../img/cherryblossom.jpg">Photos</a>
 		        		</div>
 		        		<div class="readBox5"><a href="#">
-		        			<img id="imgSize" src="../img/apeachh.jpg">APeachh</a>
+		        			<img id="imgSize" src="../img/apeachh.jpg">Food</a>
 		        		</div>
 		        		<div class="readBox6"><a href="#">
-		        			<img id="imgSize" src="../img/pinkMuhlyGrass.jpg">Pink Muhly Grass</a>
+		        			<img id="imgSize" src="../img/pinkMuhlyGrass.jpg">Exercise</a>
 		        		</div>
 		        		<div class="readBox7"><a href="#">
-		        			<img id="imgSize" src="../img/pinkPanda.jpg">Pink Panda</a>
+		        			<img id="imgSize" src="../img/pinkPanda.jpg">Movies</a>
 		        		</div>
 		        		<div class="readBox8"><a href="#">
-		        			<img id="imgSize" src="../img/grandBudaPestHotel.jpg">Grand BudaPest Hotel</a>
+		        			<img id="imgSize" src="../img/grandBudaPestHotel.jpg">Music</a>
 		        		</div>
 		        		<div class="readBox9"><a href="#">
-		        			<img id="imgSize" src="../img/simpsonDonuts.png">Simpson Donut</a>
+		        			<img id="imgSize" src="../img/simpsonDonuts.png">Love</a>
 		        		</div>
 
 	        	</div>
@@ -122,48 +123,6 @@
 
 	   </div>
     </div>
-
-    <script>
-
-       $(document).ready(function(){
-           $(".menuBar1").click(function(){
-               var id = $(this).attr('id');
-               alert("id:" + id);
-           });
-
-       $("#FaceBookIcon").on("click",function(){
-   			var openNewWindow = window.open('about:blank');
-       		//alert('move Facebook');
-       		openNewWindow.location.href="https://www.facebook.com/jihye.lee.54738";
-       });
-
-       $("#InstaGramIcon").on("click",function(){
-   			var openNewWindow = window.open('about:blank');
-       		//alert('move Instagram');
-       		openNewWindow.location.href="https://www.instagram.com/wisdom__is/";
-       });
-
-       $("#GithubIcon").on("click",function(){
-       		var openNewWindow = window.open('about:blank');
-       		//alert('move Github');
-       		openNewWindow.location.href="https://github.com/LEEJI-HYE";
-       });
-       $(".sb-Menu li").hover(function(){
-       		$("ul:first",this).show();
-       }, function(){
-       		$("ul:first",this).hide();
-       });
-
-       $("#RESUMEPAGEGO").click(function(){
-   			location.href = "blogResume.html";
-       });
-
-       $(".readBox1").click(function(){
-       		location.href = "blogRead.html";
-       });
-    });
-
-    </script>
 
 </body>
 </html>
