@@ -62,7 +62,7 @@ body {background-color: var(--main-background-color);}
 		 border: 0 none #FFC0CB; border-width: 2px; outline: 0; display: inline-block; 
 		 background-color: var(--main-background-color);}
 .side_btn:hover {width: 100px; height: 40px; line-height: 50px; display: inline-block;
-			 background-color: #F5F5DC; color: black;}
+			background: transparent; background-color: #F5F5DC; color: black;}
 
 .wrapper .mainContent {width: 64%; height: 1000px; text-align: left;
 					   background-color: var(--main-color); font-size: 50px; text-align: center; float: left;}
@@ -83,6 +83,8 @@ body {background-color: var(--main-background-color);}
 .emPhName {color: white; text-decoration: underline;}
 .noemPhName {color: #808080;}
 .wrapper .mainContent .section {width: 100%; height: 1000px; text-align: left;font-size: 20px; float: left;}
+
+
 
 .wrapper .subMenuBar {width: 18%; height: 1000px; background-color: var(--main-color); float: left;}
 .wrapper .subMenuBar .recentContent {width:100%; height: 50%; text-align: center;
